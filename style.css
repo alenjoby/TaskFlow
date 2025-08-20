@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #060E1C;
+    font-family: "Montserrat", Arial, sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+.logo img{
+    width: 150px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.menu ul{
+    list-style: none;
+    display: flex;
+    gap: 35px;
+}
+
+.menu a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow: 0 0 6px #56CFE1, 0 0 12px #56CFE1;
+    transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+.menu a:hover{
+    color: #56CFE1;
+    text-shadow: 0 0 10px #56CFE1, 0 0 20px #56CFE1, 0 0 30px #56CFE1;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 60px 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-text{
+    color: white;
+    margin: 0;
+    flex: 1;
+    max-width: 560px;
+    margin-top: 90px;
+}
+
+.hero-text h1{
+    font-size: clamp(32px, 4vw + 8px, 56px);
+    line-height: 1.2;
+    font-weight: 800;
+}
+
+.hero-text h3{
+    font-size: clamp(20px, 1.2vw + 10px, 20px);
+    line-height: 1.6;
+    color: #cbd5e1;
+    font-weight: 300;
+    margin-top: 12px;
+}
+
+.hero-text button{
+    margin-top: 25px;
+    padding: 12px 20px;
+    font-size: 20px;
+    border: none;
+    border-radius: 15px;
+    background: #56CFE1;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.hero-image{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.hero-image img{
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+    display: block;
+}
+.why-us-title{
+    text-align: center;
+    margin-top: 100px;
+    color: white;
+    font-size: 40px;
+}
+
+.why-us-grid{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    width: 100%;
+    max-width: 1400px;
+    margin: 60px auto 0;
+    padding: 0 30px;
+}
+
+.feature-card{
+    flex: 1;
+    background: #101B2D;
+    border-radius: 18px;
+    padding: 48px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 320px;
+}
+
+.feature-icon{
+    width: 56px;
+    height: 56px;
+    margin-bottom: 18px;
+    filter: drop-shadow(0 0 8px #56CFE1);
+}
+
+.feature-title{
+    color: #56CFE1;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.feature-description{
+    color: #cbd5e1;
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.6;
+}
