@@ -100,6 +100,10 @@ nav{
     height: auto;
     display: block;
 }
+
+.why-us{
+    margin-bottom: 150px;
+}
 .why-us-title{
     text-align: center;
     margin-top: 100px;
@@ -119,7 +123,7 @@ nav{
 
 .feature-card{
     flex: 1;
-    background: #101B2D;
+    background: #ffffff;
     border-radius: 18px;
     padding: 48px 32px;
     display: flex;
@@ -137,14 +141,96 @@ nav{
 }
 
 .feature-title{
-    color: #56CFE1;
+    color: #060E1C;
     font-size: 25px;
     margin-bottom: 10px;
 }
 
 .feature-description{
-    color: #cbd5e1;
+    color:#56CFE1;
     font-size: 16px;
     text-align: justify;
     line-height: 1.6;
+}
+
+.reviews-title{
+    text-align: center;
+    margin-top: 100px;
+    color: white;
+    font-size: 40px;
+}
+
+.reviews-grid{
+	display: flex;
+	flex-direction: column;
+	gap: 28px;
+	max-width: 900px;
+	margin: 40px auto 0;
+	padding: 0 30px;
+}
+
+.review-card{
+	background: #ffffff;
+	border-radius: 12px;
+	padding: 36px;
+	min-height: 200px;
+}
+
+.review-card:hover{
+	transform: translateY(-4px);
+	box-shadow: 0 18px 36px rgba(86, 207, 225, 0.25), 0 10px 18px rgba(0,0,0,0.28);
+}
+
+.review-header{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 14px;
+}
+
+.review-avatar{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #56CFE1;
+    color: #060E1C;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.review-name{
+    color: #060E1C;
+    font-size: 18px;
+    margin: 0;
+}
+
+.review-role{
+	font-weight: 600;
+}
+
+.review-text{
+	color: #060E1C;
+	line-height: 1.7;
+}
+
+.review-text::before{
+	content: "\201C";
+	color: #56CFE1;
+	font-size: 28px;
+	margin-right: 6px;
+	vertical-align: -6px;
+} 
+
+.reviews{
+    background-image: linear-gradient(rgba(6, 14, 28, 0.45), rgba(6, 14, 28, 0.45)), url("/Assets/Images/gradient.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 60px 0;
+}
+
+@media (max-width: 1000px){
+    .reviews-grid{ grid-template-columns: 1fr; }
 }
