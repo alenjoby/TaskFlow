@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #060E1C;
+    background-color: #F4F3EF;
     font-family: "Montserrat", Arial, sans-serif;
     scroll-behavior: smooth;
 }
@@ -39,7 +39,7 @@ nav{
     display: block;
     width: 100%;
     height: 3px;
-    background: #ffffff;
+    background: #1A1A1A;
     margin: 6px 0;
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
@@ -60,14 +60,14 @@ nav{
 }
 
 .menu a{
-    color: #ffffff;
+    color: #1A1A1A;
     text-decoration: none;
     font-size: 20px;
     transition: color 0.2s ease;
 }
 
 .menu a:hover{
-    color: #56CFE1;
+    color: #4B4ACF;
 }
 
 .hero{
@@ -82,7 +82,7 @@ nav{
 }
 
 .hero-text{
-    color: white;
+    color: #1A1A1A;
     margin: 0;
     flex: 1;
     max-width: 560px;
@@ -98,7 +98,7 @@ nav{
 .hero-text h3{
     font-size: clamp(20px, 1.2vw + 10px, 20px);
     line-height: 1.6;
-    color: #cbd5e1;
+    color: #5A5A66;
     font-weight: 300;
     margin-top: 12px;
 }
@@ -109,9 +109,16 @@ nav{
     font-size: 20px;
     border: none;
     border-radius: 15px;
-    background: #56CFE1;
-    color: #ffffff;
+    background: #4B4ACF;
+    color: #FFFFFF;
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hero-text button:hover{
+    background: #3A39A8;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(75, 74, 207, 0.3);
 }
 
 .hero-image{
@@ -143,13 +150,7 @@ nav{
     z-index: 0;
 }
 
-.why-us::after{
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(6, 14, 28, 0.45);
-    z-index: 1;
-}
+
 
 .why-us-title,
 .why-us-grid{
@@ -160,7 +161,7 @@ nav{
 .why-us-title{
     text-align: center;
     margin-top: 100px;
-    color: white;
+    color: #1A1A1A;
     font-size: 40px;
 }
 
@@ -176,7 +177,7 @@ nav{
 
 .feature-card{
     flex: 1;
-    background: #ffffff;
+    background: #FFFFFF;
     border-radius: 18px;
     padding: 48px 32px;
     display: flex;
@@ -184,23 +185,30 @@ nav{
     align-items: center;
     text-align: center;
     min-height: 320px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
 }
 
 .feature-icon{
     width: 56px;
     height: 56px;
     margin-bottom: 18px;
-    filter: drop-shadow(0 0 8px #56CFE1);
+    filter: drop-shadow(0 0 8px rgba(75, 74, 207, 0.3));
 }
 
 .feature-title{
-    color: #060E1C;
+    color: #1A1A1A;
     font-size: 25px;
     margin-bottom: 10px;
 }
 
 .feature-description{
-    color:#56CFE1;
+    color: #5A5A66;
     font-size: 16px;
     text-align: justify;
     line-height: 1.6;
@@ -210,7 +218,7 @@ nav{
 .reviews-title{
     text-align: center;
     margin-top: 100px;
-    color: white;
+    color: #1A1A1A;
     font-size: 40px;
 }
 
@@ -224,15 +232,17 @@ nav{
 }
 
 .review-card{
-	background: #ffffff;
+	background: #FFFFFF;
 	border-radius: 12px;
 	padding: 36px;
 	min-height: 200px;
+	box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+	transition: all 0.3s ease;
 }
 
 .review-card:hover{
 	transform: translateY(-4px);
-	box-shadow: 0 18px 36px rgba(86, 207, 225, 0.25), 0 10px 18px rgba(0,0,0,0.28);
+	box-shadow: 0 18px 36px rgba(75, 74, 207, 0.15), 0 10px 18px rgba(0,0,0,0.1);
 }
 
 .review-header{
@@ -246,8 +256,8 @@ nav{
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    background: #56CFE1;
-    color: #060E1C;
+    background: #4B4ACF;
+    color: #FFFFFF;
     font-weight: 800;
     display: flex;
     align-items: center;
@@ -255,23 +265,24 @@ nav{
 }
 
 .review-name{
-    color: #060E1C;
+    color: #1A1A1A;
     font-size: 18px;
     margin: 0;
 }
 
 .review-role{
 	font-weight: 600;
+	color: #5A5A66;
 }
 
 .review-text{
-	color: #060E1C;
+	color: #1A1A1A;
 	line-height: 1.7;
 }
 
 .review-text::before{
 	content: "\201C";
-	color: #56CFE1;
+	color: #4B4ACF;
 	font-size: 28px;
 	margin-right: 6px;
 	vertical-align: -6px;
@@ -293,13 +304,7 @@ nav{
     z-index: 0;
 }
 
-.reviews::after{
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(6, 14, 28, 0.45);
-    z-index: 1;
-}
+
 
 .reviews-title,
 .reviews-grid{
@@ -308,7 +313,7 @@ nav{
 }
 
 .pricing{
-    background: #ffffff;
+    background: #FFFFFF;
     padding: 80px 0 0;
     padding-bottom: 100px;
 }
@@ -326,14 +331,14 @@ nav{
 
 .pricing-header h1{
     font-size: 48px;
-    color: #060E1C;
+    color: #1A1A1A;
     margin-bottom: 16px;
     font-weight: 700;
 }
 
 .pricing-header p{
     font-size: 20px;
-    color: #56CFE1;
+    color: #5A5A66;
     font-weight: 400;
 }
 
@@ -346,7 +351,7 @@ nav{
 
 .features-panel{
     flex: 1;
-    background: linear-gradient(135deg, #56CFE1 0%, #3B82F6 100%);
+    background: linear-gradient(135deg, #4B4ACF 0%, #3A39A8 100%);
     border-radius: 20px;
     padding: 40px;
     position: relative;
@@ -359,7 +364,7 @@ nav{
 
 .features-panel h3{
     font-size: 24px;
-    color: #ffffff;
+    color: #FFFFFF;
     margin-bottom: 32px;
     font-weight: 600;
 }
@@ -375,20 +380,20 @@ nav{
     align-items: center;
     margin-bottom: 20px;
     font-size: 16px;
-    color: #ffffff;
+    color: #FFFFFF;
     line-height: 1.6;
 }
 
 .features-list li::before{
     content: "✓";
-    color: #ffffff;
+    color: #FFFFFF;
     font-weight: bold;
     margin-right: 12px;
     font-size: 18px;
 }
 
 .see-all-link{
-    color: #ffffff;
+    color: #FFFFFF;
     text-decoration: underline;
     font-weight: 500;
     font-size: 16px;
@@ -410,29 +415,30 @@ nav{
     padding: 24px;
     transition: all 0.3s ease;
     cursor: pointer;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
 }
 
 .pricing-card:hover{
     transform: translateY(-4px);
-    box-shadow: 0 20px 40px rgba(86, 207, 225, 0.2);
-    border-color: #56CFE1;
+    box-shadow: 0 20px 40px rgba(75, 74, 207, 0.15);
+    border-color: #4B4ACF;
 }
 
 .pricing-card.active{
-    background: linear-gradient(135deg, #56CFE1 0%, #3B82F6 100%);
-    border-color: #56CFE1;
+    background: linear-gradient(135deg, #4B4ACF 0%, #3A39A8 100%);
+    border-color: #4B4ACF;
     transform: scale(1.02);
 }
 
 .pricing-card.active .plan-info h3,
 .pricing-card.active .plan-info p,
 .pricing-card.active .card-features p{
-    color: #ffffff;
+    color: #FFFFFF;
 }
 
 .pricing-card.active .plan-price .price,
 .pricing-card.active .plan-price .period{
-    color: #ffffff;
+    color: #FFFFFF;
 }
 
 .card-header{
@@ -448,14 +454,14 @@ nav{
 
 .plan-info h3{
     font-size: 20px;
-    color: #060E1C;
+    color: #1A1A1A;
     margin: 0 0 4px 0;
     font-weight: 600;
 }
 
 .plan-info p{
     font-size: 14px;
-    color: #56CFE1;
+    color: #5A5A66;
     margin: 0;
 }
 
@@ -467,16 +473,16 @@ nav{
 .price{
     font-size: 28px;
     font-weight: 700;
-    color: #060E1C;
+    color: #1A1A1A;
 }
 
 .period{
     font-size: 16px;
-    color: #56CFE1;
+    color: #5A5A66;
 }
 
 .card-features p{
-    color: #64748B;
+    color: #5A5A66;
     font-size: 14px;
     margin: 8px 0;
     line-height: 1.5;
@@ -484,7 +490,7 @@ nav{
 
 /* Footer Styles */
 .footer{
-    background: #000000;
+    background: #1A1A1A;
     border-top: 1px solid #333333;
     padding: 60px 0 30px;
 }
@@ -526,12 +532,12 @@ nav{
 .brand-name{
     font-size: 28px;
     font-weight: 800;
-    color: #ffffff;
+    color: #FFFFFF;
     letter-spacing: -0.5px;
 }
 
 .footer-description{
-    color: #cccccc;
+    color: #5A5A66;
     line-height: 1.6;
     margin-bottom: 24px;
     font-size: 16px;
@@ -549,17 +555,17 @@ nav{
     width: 40px;
     height: 40px;
     border-radius: 8px;
-    background: #ffffff;
+    background: #FFFFFF;
     border: 1px solid #333333;
-    color: #56CFE1;
+    color: #4B4ACF;
     transition: all 0.2s ease;
 }
 
 .social-icon:hover{
-    background: #56CFE1;
-    color: #ffffff;
+    background: #4B4ACF;
+    color: #FFFFFF;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(86, 207, 225, 0.3);
+    box-shadow: 0 4px 12px rgba(75, 74, 207, 0.3);
 }
 
 .footer-links{
@@ -569,7 +575,7 @@ nav{
 }
 
 .link-column h4{
-    color: #ffffff;
+    color: #FFFFFF;
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 16px;
@@ -584,14 +590,14 @@ nav{
 }
 
 .link-column a{
-    color: #cccccc;
+    color: #5A5A66;
     text-decoration: none;
     font-size: 14px;
     transition: color 0.2s ease;
 }
 
 .link-column a:hover{
-    color: #56CFE1;
+    color: #4B4ACF;
 }
 
 .footer-bottom{
@@ -603,7 +609,7 @@ nav{
 }
 
 .copyright p{
-    color: #cccccc;
+    color: #5A5A66;
     font-size: 14px;
     margin: 0;
 }
@@ -614,19 +620,19 @@ nav{
 }
 
 .legal-links a{
-    color: #cccccc;
+    color: #5A5A66;
     text-decoration: none;
     font-size: 14px;
     transition: color 0.2s ease;
 }
 
 .legal-links a:hover{
-    color: #56CFE1;
+    color: #4B4ACF;
 }
 
 /* Product Carousel Styles */
 .product-carousel{
-    background: #ffffff;
+    background: #FFFFFF;
     padding: 80px 0;
 
 }
@@ -644,14 +650,14 @@ nav{
 
 .carousel-header h2{
     font-size: 36px;
-    color: #060E1C;
+    color: #1A1A1A;
     margin-bottom: 16px;
     font-weight: 700;
 }
 
 .carousel-header p{
     font-size: 18px;
-    color: #56CFE1;
+    color: #5A5A66;
     font-weight: 400;
 }
 
@@ -692,14 +698,14 @@ nav{
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    color: #56CFE1;
+    color: #4B4ACF;
     transition: all 0.3s ease;
     z-index: 10;
 }
 
 .carousel-btn:hover{
-    background: #56CFE1;
-    color: #ffffff;
+    background: #4B4ACF;
+    color: #FFFFFF;
     transform: translateY(-50%) scale(1.1);
 }
 
@@ -729,12 +735,12 @@ nav{
 }
 
 .dot.active{
-    background: #56CFE1;
+    background: #4B4ACF;
     transform: scale(1.2);
 }
 
 .dot:hover{
-    background: #56CFE1;
+    background: #4B4ACF;
 }
 
 /*  Media Queries */
@@ -816,14 +822,14 @@ nav{
         gap: 10px;
         padding: 16px;
         border-radius: 16px;
-        background: rgba(255, 255, 255, 0.12);
+        background: rgba(255, 255, 255, 0.95);
         backdrop-filter: blur(14px);
         -webkit-backdrop-filter: blur(14px);
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+        border: 1px solid rgba(75, 74, 207, 0.2);
+        box-shadow: 0 10px 30px rgba(0,0,0,0.15);
     }
     .menu.is-open ul{ display: flex; }
-    .menu a{ color: #ffffff; }
+    .menu a{ color: #1A1A1A; }
     .logo img{
         width: 120px;
     }
