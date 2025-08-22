@@ -1,4 +1,4 @@
-// Pricing card interaction
+// Pricing card
 const pricingCards = document.querySelectorAll('.pricing-card');
 const featuresPanel = document.querySelector('.features-panel');
 
@@ -70,10 +70,9 @@ pricingCards.forEach(card => {
     });
 });
 
-// Initialize with popular tier
 updateFeaturesPanel('popular');
 
-// Product Carousel functionality
+// Product Carousel 
 const carouselTrack = document.querySelector('.carousel-track');
 const slides = document.querySelectorAll('.carousel-slide');
 const prevBtn = document.querySelector('.prev-btn');
@@ -88,7 +87,7 @@ function goToSlide(slideIndex) {
     const offset = -slideIndex * 100;
     carouselTrack.style.transform = `translateX(${offset}%)`;
     
-    // Update dots
+
     dots.forEach((dot, index) => {
         dot.classList.toggle('active', index === slideIndex);
     });
@@ -104,19 +103,15 @@ function prevSlide() {
     goToSlide(currentSlide);
 }
 
-// Event listeners
 nextBtn.addEventListener('click', nextSlide);
 prevBtn.addEventListener('click', prevSlide);
 
-// Dot navigation
 dots.forEach((dot, index) => {
     dot.addEventListener('click', () => goToSlide(index));
 });
 
-// Auto-play (optional)
 let autoPlayInterval = setInterval(nextSlide, 5000);
 
-// Pause auto-play on hover
 const carouselWrapper = document.querySelector('.carousel-wrapper');
 carouselWrapper.addEventListener('mouseenter', () => {
     clearInterval(autoPlayInterval);
@@ -126,7 +121,6 @@ carouselWrapper.addEventListener('mouseleave', () => {
     autoPlayInterval = setInterval(nextSlide, 5000);
 });
 
-// Keyboard navigation
 document.addEventListener('keydown', (e) => {
     if (e.key === 'ArrowLeft') {
         prevSlide();
@@ -137,7 +131,7 @@ document.addEventListener('keydown', (e) => {
 
 // Initialize AOS (Animate On Scroll)
 document.addEventListener('DOMContentLoaded', function() {
-    // Check if AOS is loaded
+
     if (typeof AOS !== 'undefined') {
         AOS.init();
     }
