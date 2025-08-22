@@ -141,4 +141,15 @@ document.addEventListener('DOMContentLoaded', function() {
     if (typeof AOS !== 'undefined') {
         AOS.init();
     }
+
+    // Mobile hamburger toggle
+    const hamburgerBtn = document.querySelector('.hamburger');
+    const menu = document.querySelector('.menu');
+    if (hamburgerBtn && menu) {
+        hamburgerBtn.addEventListener('click', () => {
+            const isOpen = menu.classList.toggle('is-open');
+            hamburgerBtn.classList.toggle('is-active', isOpen);
+            hamburgerBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+    }
 });
